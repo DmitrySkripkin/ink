@@ -90,8 +90,8 @@ const renderBorder = (
 		let bottomBorder = showBottomBorder
 			? colorize(
 					(showLeftBorder ? box.bottomLeft : '') +
-						+ box.top.repeat(contentWidth - (node.style.borderBottomLabel ? node.style.borderBottomLabel.length : 0)) +
-						box.bottom.repeat(contentWidth) +
+						+ (node.style.borderBottomLabel ? node.style.borderBottomLabel : '')
+						+ box.bottom.repeat(contentWidth - (node.style.borderBottomLabel ? node.style.borderBottomLabel.length : 0)) +
 						(showRightBorder ? box.bottomRight : ''),
 					bottomBorderColor,
 					'foreground'
