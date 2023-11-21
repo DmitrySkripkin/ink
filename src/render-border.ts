@@ -48,7 +48,7 @@ const renderBorder = (
 
 		let topBorder = showTopBorder
 			? colorize(
-					(showLeftBorder ? box.topLeft : '') +
+					(showLeftBorder ? box.topLeft : '')
 						+ (node.style.borderTopLabel ? node.style.borderTopLabel : '')
 						+ box.top.repeat(contentWidth - (node.style.borderTopLabel ? node.style.borderTopLabel.length : 0)) +
 						(showRightBorder ? box.topRight : ''),
@@ -89,7 +89,7 @@ const renderBorder = (
 
 		let bottomBorder = showBottomBorder
 			? colorize(
-					(showLeftBorder ? box.bottomLeft : '') +
+					(showLeftBorder ? box.bottomLeft : '')
 						+ (node.style.borderBottomLabel ? node.style.borderBottomLabel : '')
 						+ box.bottom.repeat(contentWidth - (node.style.borderBottomLabel ? node.style.borderBottomLabel.length : 0)) +
 						(showRightBorder ? box.bottomRight : ''),

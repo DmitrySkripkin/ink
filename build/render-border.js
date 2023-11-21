@@ -22,8 +22,8 @@ const renderBorder = (x, y, node, output) => {
         const showRightBorder = node.style.borderRight !== false;
         const contentWidth = width - (showLeftBorder ? 1 : 0) - (showRightBorder ? 1 : 0);
         let topBorder = showTopBorder
-            ? colorize((showLeftBorder ? box.topLeft : '') +
-                +(node.style.borderTopLabel ? node.style.borderTopLabel : '')
+            ? colorize((showLeftBorder ? box.topLeft : '')
+                + (node.style.borderTopLabel ? node.style.borderTopLabel : '')
                 + box.top.repeat(contentWidth - (node.style.borderTopLabel ? node.style.borderTopLabel.length : 0)) +
                 (showRightBorder ? box.topRight : ''), topBorderColor, 'foreground')
             : undefined;
@@ -46,8 +46,8 @@ const renderBorder = (x, y, node, output) => {
             rightBorder = chalk.dim(rightBorder);
         }
         let bottomBorder = showBottomBorder
-            ? colorize((showLeftBorder ? box.bottomLeft : '') +
-                +(node.style.borderBottomLabel ? node.style.borderBottomLabel : '')
+            ? colorize((showLeftBorder ? box.bottomLeft : '')
+                + (node.style.borderBottomLabel ? node.style.borderBottomLabel : '')
                 + box.bottom.repeat(contentWidth - (node.style.borderBottomLabel ? node.style.borderBottomLabel.length : 0)) +
                 (showRightBorder ? box.bottomRight : ''), bottomBorderColor, 'foreground')
             : undefined;
