@@ -187,6 +187,9 @@ export type Styles = {
 	 */
 	readonly borderStyle?: keyof Boxes | BoxStyle;
 
+	readonly borderTopLabel?: string;
+	readonly borderBottomLabel?: string;
+
 	/**
 	 * Determines whether top border is visible.
 	 *
